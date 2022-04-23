@@ -24,8 +24,9 @@ SECRET_KEY = 'django-insecure-m!k%da)ck@h6=%v28v2fg+%w8+_^lkdr28r#nvho=7%4xd*stl
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -56,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True, # 各appのtemplatesを検索
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
